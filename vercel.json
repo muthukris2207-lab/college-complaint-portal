@@ -1,0 +1,37 @@
+{
+  "functions": {
+    "index.php": {
+      "runtime": "vercel-php@0.9.0"
+    },
+    "track.php": {
+      "runtime": "vercel-php@0.9.0"
+    },
+    "login.php": {
+      "runtime": "vercel-php@0.9.0"
+    },
+    "logout.php": {
+      "runtime": "vercel-php@0.9.0"
+    },
+    "dashboard_staff.php": {
+      "runtime": "vercel-php@0.9.0"
+    },
+    "dashboard_hod.php": {
+      "runtime": "vercel-php@0.9.0"
+    },
+    "dashboard_principal.php": {
+      "runtime": "vercel-php@0.9.0"
+    },
+    "cron/escalate.php": {
+      "runtime": "vercel-php@0.9.0"
+    }
+  },
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.php"
+    }
+  ]
+}
